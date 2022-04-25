@@ -1,0 +1,9 @@
+#footer{
+    bottom:0;
+    min-width:100%;
+    position:fixed;
+    color:black;
+    background-color: cadetblue;
+    text-align:center;
+    z-index:2;
+}
