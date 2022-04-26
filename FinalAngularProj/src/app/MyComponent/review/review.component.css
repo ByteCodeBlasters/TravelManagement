@@ -1,0 +1,23 @@
+#backgroundImage{
+    position:absolute;
+    background-image: url("../../../assets/BGforReview.jpg");
+    background-repeat:none;
+    background-size: auto;
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    filter: blur(7px);
+    top:0;
+
+}
+#theCards{
+    position: relative;
+    z-index: 1;
+}
+#contentOfTheSite{
+    position:relative;
+    z-index: 1;
+}
+p,h1,h2,h3,h4,h5,h6{
+    font-family: cursive;
+}

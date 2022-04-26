@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+    <div class="container" id="contentOfTheSite" style="padding-top:70px; padding-bottom:70px;">
+        <h1 style="text-align:center;">Packages</h1>
+        <h3 style="text-align:center;">Affordable and at the cheapest rates available</h3>
+        <section>
+            <div *ngFor="let pack of packages;index as i" id="theParentCard" style="padding-top:10px;">
+                <div class="card" id="theCards" style="padding-top:25px;margin:5px;">
+                    <img [src]="pack.imageurl" class="card-img-top" alt="Manali.jpg" style="max-height: 300px;max-width: 30%;padding-left:30px">
+                    <div class="card-body">
+                        <h2 class="card-title" id="theDestination">This is {{pack.destination}}</h2>
+                        <p class="card-text">Description : {{pack.description}}</p>
+                        <p class="card-text">Cost per person : Rs.{{pack.costPerPerson}}</p>
+                        <p class="card-text">This package is available at {{pack.organizer}} you can contact them through {{pack.contactNumber}} </p>
+                        <p class="card-text">This is a {{pack.numberOfDays}} days tour</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <app-footer></app-footer>
